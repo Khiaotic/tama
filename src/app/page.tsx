@@ -1,3 +1,11 @@
+import React from 'react';
+import Navigation from '../../components/Navigation'
+
+
 export default function Home() {
-  return <h1>Tania</h1>
+  return (
+    <div>
+      <Navigation/>
+    </div>
+  )
 }
