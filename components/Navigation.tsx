@@ -1,28 +1,31 @@
 import React from 'react';
 import Link from 'next/link';
+import '../styles/fonts.css'
 
 
 function Navigation() {
   return (
-    <nav className='flex justify-center items-center'>
-      <ul className='flex justify-center items-center'>
+    <nav className='py-4 text-center'>
+      <div className='container mx-auto'>
+      <ul className='flex justify-center space-x-4 text-2xl text-black font-bebas-neue'>
         <li>
-          <Link href="/">Home</Link>
+          <Link href="/" className="bebasFont">Home</Link>
         </li>
         <li>
-          <Link href="/niceTings">Nice Tingz</Link>
+          <Link href="/niceTings" className="bebasFont">Nice Tingz</Link>
         </li>
         <li>
-          <Link href="/assets">Assets</Link>
+          <Link href="/assets" className="bebasFont">Assets</Link>
         </li>
         <li>
-          <Link href="/talks">Talks</Link>
+          <Link href="/talks" className="bebasFont">Talks</Link>
         </li>
         <li>
-          <Link href="/khi">KHI</Link>
+          <Link href="/khi" className="bebasFont">KHI</Link>
         </li>
         {/* Add more navigation links as needed */}
       </ul>
+      </div>
     </nav>
   );
 }

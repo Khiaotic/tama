@@ -1,5 +1,21 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* //custom fonts  */
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+  
+
+
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+
+/* Custom styles or other CSS imports */
+  
+@font-face {
+    font-family:'Bebas Neue' ;
+    src: url('/fonts/BebasNeue-Regular.ttf');
+}
+
 
 
