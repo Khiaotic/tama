@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+// import '../../styles/mobile-styles.css';
 import '../styles/fonts.css'
 
 
@@ -18,7 +19,7 @@ function Navigation() {
           <Link href="/assets" className="bebasFont">Assets</Link>
         </li>
         <li>
-          <Link href="/talks" className="bebasFont">Talks</Link>
+          <Link href="/share" className="bebasFont">Share</Link>
         </li>
         <li>
           <Link href="/khi" className="bebasFont">KHI</Link>
