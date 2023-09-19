@@ -11,7 +11,10 @@
 
 
 /* Custom styles or other CSS imports */
-  
+  body{
+    /* background-color: #C9A4C6; */
+    /* background-color: #EFBCCD; */
+  }
 @font-face {
     font-family:'Bebas Neue' ;
     src: url('/fonts/BebasNeue-Regular.ttf');

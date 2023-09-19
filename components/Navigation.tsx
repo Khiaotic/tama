@@ -8,7 +8,7 @@ function Navigation() {
   return (
     <nav className='py-4 text-center'>
       <div className='container mx-auto'>
-      <ul className='flex justify-center space-x-4 text-2xl text-black font-bebas-neue'>
+      <ul className='flex justify-center space-x-4 text-2xl text-black'>
         <li>
           <Link href="/" className="bebasFont">Home</Link>
         </li>

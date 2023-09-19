@@ -2,6 +2,34 @@
 
 
 
+
+
+/* ///date scroller/// */
+
+.date-scroll-container {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%
+}
+
+
+.date-scroll-container > div {
+    display: inline-block;
+    margin-right: 10px;
+    /* padding: 0 20 px; */
+    animation: scrollLeft 20s linear infinite;
+    white-space: nowrap
+}
+
+@keyframes scrollLeft {
+    0% {
+        tranform: translateX(100%)
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 /* ////FONT///// */
 @media (width: 375px) 
 and (height: 667px) 
