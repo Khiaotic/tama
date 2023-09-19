@@ -31,7 +31,7 @@ currentDateTimeElement.textContent = formattedDate
 }
 
 ///immdediately display/////
-setInterval(updateDateTime, 1000 )
+setInterval(updateDateTime, 1000)
 updateDateTime()
 
 
