@@ -23,6 +23,7 @@ import Navigation from '../../components/Navigation'
       <p>
         a welcome message
       </p>
+      <p>a million dollars but...</p>
       <p>
         mood tracker? collect data
       </p>
