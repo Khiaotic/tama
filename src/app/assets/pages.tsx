@@ -1,17 +1,17 @@
 // 'use client' 
 // import Link from 'next/link';
 import Popup from '../../../components/popup'
-import React, {useEffect, useState} from 'react';
+import React, { useState} from 'react';
 import '../../styles/mobile-styles.css'
 import Navigation from '../../../components/Navigation'
-import { on } from 'events';
+// import { on } from 'events';
 
 interface PopupProps {
     assetType: string;
     assetURL: string;
     onClose: () => void
 }
-export default async function Assets({assetType, assetURL, onClose} : PopupProps) {
+export default function Assets({assetType, assetURL, onClose} : PopupProps) {
     const [selectedAsset, setSelectedAsset] = useState<PopupProps | null>(null)
     
     
@@ -19,7 +19,8 @@ export default async function Assets({assetType, assetURL, onClose} : PopupProps
         setSelectedAsset({ 
             assetType: assetType, 
             assetURL: assetURL,
-        onClose: closePopup});
+        onClose: closePopup
+    });
     }
 
     const closePopup = () => {
@@ -53,9 +54,9 @@ export default async function Assets({assetType, assetURL, onClose} : PopupProps
             <div onClick={() => openPopup('image',"")}></div>
             <div onClick={() => openPopup('video',"")}></div>
 
-{selectedAsset && (
-    <Popup assetType={selectedAsset.assetType} assetURL={selectedAsset.assetURL} onClose={closePopup} />
-)}
+{selectedAsset && 
+    <Popup selectedAsset={selectedAsset.assetType} assetURL={selectedAsset.assetURL} onClose={closePopup} />
+}
 
         </div>
 
