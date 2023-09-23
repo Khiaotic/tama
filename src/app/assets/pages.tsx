@@ -17,10 +17,10 @@ export default function Assets({assetType, assetURL, onClose} : PopupProps) {
     
     const openPopup = (assetType: string, assetURL: string) => {
         setSelectedAsset({ 
-            assetType: assetType, 
+            assetType: assetType,
+            onClose: closePopup, 
             assetURL: assetURL,
-        onClose: closePopup
-    });
+        });
     }
 
     const closePopup = () => {
@@ -54,9 +54,10 @@ export default function Assets({assetType, assetURL, onClose} : PopupProps) {
             <div onClick={() => openPopup('image',"")}></div>
             <div onClick={() => openPopup('video',"")}></div>
 
-{selectedAsset && 
-    <Popup selectedAsset={selectedAsset.assetType} assetURL={selectedAsset.assetURL} onClose={closePopup} />
+            {selectedAsset && 
+    <Popup assetType={selectedAsset.assetType} assetURL={selectedAsset.assetURL} onClose={closePopup} />
 }
+
 
         </div>
 

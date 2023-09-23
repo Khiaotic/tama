@@ -1,8 +1,8 @@
 import {useState} from 'react'
 
 
-export default function Popup(){
-const [showPop, setShowPopup] = useState(true)
+export default function Popup({assetType, assetURL, onClose }){
+const [showPopup, setShowPopup] = useState(true)
 
 const handleClose = () => {
     setShowPopup(fasle)
