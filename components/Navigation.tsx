@@ -1,14 +1,15 @@
 import React from 'react';
 import Link from 'next/link';
-// import '../../styles/mobile-styles.css';
-import '../styles/fonts.css'
+import '../styles/mobile-styles.css';
+import '../styles/fonts.css';
+// import assets from '../src/app/page'
 
 
 function Navigation() {
   return (
     <nav className='py-4 text-center'>
       <div className='container mx-auto'>
-      <ul className='flex justify-center space-x-4 text-2xl text-black'>
+      <ul className='list-none flex justify-center space-x-4 text-2xl text-black'>
         <li>
           <Link href="/" className="bebasFont">Home</Link>
         </li>

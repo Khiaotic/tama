@@ -1,9 +1,12 @@
 // 'use client' 
+// import '../../../styles/global.css'
 // import Link from 'next/link';
+import Navigation from '../../../components/Navigation'
 import Popup from '../../../components/popup'
 import React, { useState} from 'react';
-import '../../styles/mobile-styles.css'
-import Navigation from '../../../components/Navigation'
+// import '../../../styles/mobile-styles.css'
+
+
 // import { on } from 'events';
 
 interface PopupProps {
@@ -30,7 +33,8 @@ export default function Assets({assetType, assetURL, onClose} : PopupProps) {
 
 
         <div>
-            <Navigation/>
+          <Navigation />
+            
             <div id="asset-popup-container" className="fixed top-0 left-0 h-full w-full flex items-center">
                 <div className="bg-white p-4 rounded-lg">
                     <div id="popup-content"></div>
@@ -43,7 +47,7 @@ export default function Assets({assetType, assetURL, onClose} : PopupProps) {
                 </div>
                 <div className="asset-details">
                     <h2 className="asset-title">Title</h2>
-                    <p className="asset-size">Dimensions:blahblah</p>
+                    <p className="asset-size">Dimensions:bl  BRUHHHHahblah</p>
                     <p className='asset-description'></p>
                 </div>
                 <div className='asset-download-btn'>
