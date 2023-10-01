@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 .bebasFont{
 
@@ -9,4 +9,7 @@
 .latoFont{
 
     font-family: 'Lato', sans-serif;
+}
+.nunito {
+    font-family: 'Nunito', sans-serif;
 }

@@ -7,9 +7,12 @@ import Navigation from '../../../components/Navigation'
 import Popup from '../../../components/popup'
 import 'tailwindcss/tailwind.css'; // Import the compiled Tailwind CSS
 import React, { useState} from 'react';
+
+
 /////////MY IMAGES, VIDEOS, and OTHER CONTENT CONTAINER//////////////////////////
 import TamaSketchy from '../../../public/content/tamasketchygif.gif'
 // import Hannah from '../../../public/hannah.png'
+import TikTokLogo from '../../../public/logos/TikTok_Icon_Black_Circle.png'
 ///////////////////////////END OF CONTAINER///////////////////////////////////////
 
 // import '../../../styles/mobile-styles.css'
@@ -51,7 +54,7 @@ export default function Assets({assetType, assetURL, onClose} : PopupProps) {
                 </div>
         {/* ////////CONTENT CARDS//////// */}
             </div>
-            <div className="max-w-sm p-4 m-4 rounded-lg items-center shadow-xl bg-purple-200" id="assest-container">
+            <div className=" max-w-sm p-4 m-4 rounded-lg items-center shadow-xl bg-purple-200" id="assest-container">
                 <div className=" aspect-ratio: 1/1 asset-preview">
                     <Image className='rounded-t-lg '
                     src={TamaSketchy} 
@@ -63,10 +66,16 @@ export default function Assets({assetType, assetURL, onClose} : PopupProps) {
                     />
                 </div>
                 <div className="asset-details">
-                    <h2 className=" flex justify-center bebasFont text-xl asset-title">TAMA Sketchy Gif</h2>
-                    <p className="asset-size">Dimensions:1080 by 1920</p>
+                    <h2 className="flex justify-center bebasFont text-xl asset-title">TAMA Sketchy Gif</h2>
+                    <p className="nunito asset-size">Dimensions:1080 by 1920</p>
                     <p className='asset-description'></p>
                 </div>
+                <Image className='' 
+                src={TikTokLogo}
+                alt="tiktok logo"
+                width={20}
+                height={20}
+                />
                 <div className='asset-download-btn'>
                     <a href="download-link.zip"
                         download={'tamasketchygif.gif'}>
