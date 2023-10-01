@@ -8,6 +8,9 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  // css: [
+  //   './styles/'
+  // ]
   theme: {
     extend: {
       backgroundImage: {

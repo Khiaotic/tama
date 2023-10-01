@@ -20,9 +20,6 @@ function Navigation() {
           <Link href="/assets" className="bebasFont">Assets</Link>
         </li>
         <li>
-          {/* <Link href="/share" className="bebasFont">Share</Link> */}
-        </li>
-        <li>
           <Link href="/khi" className="bebasFont">KHI</Link>
         </li>
         {/* Add more navigation links as needed */}

@@ -1,4 +1,6 @@
 import Assets from '../app/assets/pages'
+import 'tailwindcss/tailwind.css'; 
+
 
 
 export default function AssetPage (){
