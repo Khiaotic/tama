@@ -8,8 +8,8 @@ import Popup from '../../../components/popup'
 import 'tailwindcss/tailwind.css'; // Import the compiled Tailwind CSS
 import React, { useState} from 'react';
 /////////MY IMAGES, VIDEOS, and OTHER CONTENT CONTAINER//////////////////////////
-import TamaSketchy from '../../../public/tamasketchygif.gif'
-import Hannah from '../../../public/hannah.png'
+import TamaSketchy from '../../../public/content/tamasketchygif.gif'
+// import Hannah from '../../../public/hannah.png'
 ///////////////////////////END OF CONTAINER///////////////////////////////////////
 
 // import '../../../styles/mobile-styles.css'
