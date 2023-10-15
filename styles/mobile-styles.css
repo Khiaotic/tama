@@ -1,6 +1,8 @@
 /* //moile styles// */
 
-
+#logo-image{
+    display: inline-block
+}
 
 
 
@@ -30,10 +32,42 @@
     }
 }
 
-/* ////FONT///// */
-@media (width: 375px) 
+
+
+
+
+
+
+
+
+
+
+
+
+/* //////////////ASSETS PAGE///////////////// */
+#darken-hover {
+    filter:brightness(100%);
+    transition: filter 0.3s ease
+}
+#darken-hover:hover {
+    filter:brightness(50%)
+}
+
+#hidden-text {
+    visibility: hidden;
+}
+.group:hover #hidden-text {
+    visibility: visible;
+}
+
+
+
+
+
+@media (width: 375px) and (max-height: 667px)
 and (height: 667px) 
 and (-webkit-device-pixel-ratio: 2) {
+    /* ////FONT///// */
     .bebasFont {
         font-size: 16px
     }
@@ -43,6 +77,10 @@ and (-webkit-device-pixel-ratio: 2) {
         justify-content: center;
     }
 
+#asset-container{
+    display: flex;
+        justify-content: center;
+}
     .nav-list {
         display: flex;
         padding: 0;
@@ -54,5 +92,14 @@ and (-webkit-device-pixel-ratio: 2) {
     .nav-list li {
         margin:0 10px;
     }
+    
+   
 }
 
+
+@media screen and (max-width:768px){
+    #logo-image {
+        width: 24px;
+        height: 24px
+    }
+}
