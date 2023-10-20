@@ -67,7 +67,7 @@ export default function Assets({ assetType, assetURL, onClose }: PopupProps) {
 
      
         <div
-          className=" w-full max-w-5xl pb-10 mx-auto mb-10 gap-5 columns-3 p-4 m-4 rounded-lg  shadow-xl bg-purple-200"
+          className=" w-full columns-1 sm:columns-3 max-w-5xl pb-10 mx-auto mb-10 gap-5 p-4 m-4 rounded-lg  shadow-xl bg-purple-200"
           id="assest-container"
         >
           <div className='group relative flex items-center justify-center sm:flex-row'>
@@ -82,7 +82,7 @@ export default function Assets({ assetType, assetURL, onClose }: PopupProps) {
               height={90}
               unoptimized={true}
               />
-              {/* <div className=" translate-y-[120%] absolute flex flex-col items-center justify-center text-center group-hover:translate-y-0 transition-all">
+              <div className=" translate-y-[120%] absolute flex flex-col items-center justify-center text-center group-hover:translate-y-0 transition-all">
               <h2 className=" text-blue-300 flex justify-center bebasFont text-xl asset-title  md:text-left">
               Tama Sketchy Gif
             </h2>
@@ -90,7 +90,7 @@ export default function Assets({ assetType, assetURL, onClose }: PopupProps) {
               <strong>Description:</strong> 3sec blurb. Can be place in
               front of tiktoks and reels, or a quik post
             </p>
-  </div> */}
+  </div>
               </div> 
               <div className='group relative flex items-center justify-center sm:flex-row'>
              <Image

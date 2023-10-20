@@ -77,10 +77,6 @@ and (-webkit-device-pixel-ratio: 2) {
         justify-content: center;
     }
 
-#asset-container{
-    display: flex;
-        justify-content: center;
-}
     .nav-list {
         display: flex;
         padding: 0;
@@ -93,8 +89,15 @@ and (-webkit-device-pixel-ratio: 2) {
         margin:0 10px;
     }
     
-   
 }
+
+@media (min-width: 1200px) { 
+    #assest-container .columns-3 {
+        display: none;
+        
+    }
+    
+ }
 
 
 @media screen and (max-width:768px){
