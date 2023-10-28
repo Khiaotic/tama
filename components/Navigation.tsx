@@ -11,16 +11,16 @@ function Navigation() {
       <div className='container mx-auto'>
       <ul className='list-none flex justify-center space-x-4 text-2xl text-black'>
         <li>
-          <Link href="/" className="bebasFont">Home</Link>
+          <Link href="/" className="bebasFont no-underline visited:text-purple-600">Home</Link>
         </li>
         <li>
-          <Link href="/niceTings" className="bebasFont">Nice Tingz</Link>
+          <Link href="/niceTings" className="bebasFont no-underline">Nice Tingz</Link>
         </li>
         <li>
-          <Link href="/assets" className="bebasFont">Assets</Link>
+          <Link href="/assets" className="bebasFont no-underline">Assets</Link>
         </li>
         <li>
-          <Link href="/khi" className="bebasFont">KHI</Link>
+          <Link href="/khi" className="bebasFont no-underline">KHI</Link>
         </li>
         {/* Add more navigation links as needed */}
       </ul>
